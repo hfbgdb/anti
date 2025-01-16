@@ -125,7 +125,7 @@ http.createServer((req, res) => {
             <input type="hidden" name="captchaId" value="${captchaId}">
             <button type="submit">Continue</button>
           </form>
-          <div class="footer">© 2025. All rights reserved.</div>
+          <div class="footer">2025. All rights reserved.</div>
         </div>
       </body>
       </html>
